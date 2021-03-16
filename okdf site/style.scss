@@ -5,58 +5,71 @@
 .header {
     width: 100vw;
     height: 100px;
+    background-color: #000000;
+}
+.main {
+    width: 100vw;
+    box-sizing: border-box;
+    .box-size {
+        width: 50vw;
+        height: 85vh;
+    }
+    .bgc-black {
+        background-color: #000;
+    }
+    .main__timer {
+        display: flex;
+    }
+    .main__concert {
+        display: flex;
+    }
+    .main__concert-friends {
+        display: flex;
+    }
+    .main__antiscience {
+        display: flex;
+    }
+    .main__press {
+        display: flex;
+    }
+}
+.footer {
+    width: 100vw;
+    height: 30vh;
     background-color: #000;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.5vw;
-    letter-spacing: 0.05em;
-    display: flex;
-    justify-content: space-between;
+    .footer__colomn {
+        display: flex;
+        flex-direction: column;
+        .sn_box-size {
+            width: 50vw;
+            height: 15vh;
+        }
+        .box_img-text {
+            width: 30vw;
+            height: 10vh;
+            .footer_text {
+                color: white;
+                font-size: 29px;
+            }
+        }
+        .centering {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .centering-img {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .logo_size {
+            max-height: 100%;
+        }
+        .footer__high-row {
+            display: flex;
+        }
+        .footer__down-row {
+            display: flex;
+        }
+    }
 }
-.header__text {
-    width: 414px;
-    height: 56px;
-    /*position: absolute;*/
-    display: block;
-}
-.white {
-    color: #ffffff;
-    top: 21px;
-    position: absolute;
-}
-.red {
-    color: #FF0000;
-    top: 23px;
-    position: absolute;
-}
-/*.first-red {
-    left: -220px;
-}
-.first-white {
-    left: -222px;    
-}
-.second-red {
-    left: 259px;
-}
-.second-white {
-    left: 257px;
-}
-.third-red {
-    left: 738px;
-}
-.third-white {
-    left: 736px;
-}
-.fourth-red {
-    left: 1217px;
-}
-.fourth-white {
-    left: 1215px;
-}
-.fifth-red {
-    left: 1698px;
-}
-.fifth-white {
-    left: 1696px;
-}*/
