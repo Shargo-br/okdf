@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100vw;
+  height: 100px;
+  background-color: #000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  letter-spacing: 0.05em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__text {
+  width: 414px;
+  height: 56px;
+  /*position: absolute;*/
+  display: block;
+}
+
+.white {
+  color: #ffffff;
+  top: 21px;
+  position: absolute;
+}
+
+.red {
+  color: #FF0000;
+  top: 23px;
+  position: absolute;
+}
+
+/*.first-red {
+    left: -220px;
+}
+.first-white {
+    left: -222px;    
+}
+.second-red {
+    left: 259px;
+}
+.second-white {
+    left: 257px;
+}
+.third-red {
+    left: 738px;
+}
+.third-white {
+    left: 736px;
+}
+.fourth-red {
+    left: 1217px;
+}
+.fourth-white {
+    left: 1215px;
+}
+.fifth-red {
+    left: 1698px;
+}
+.fifth-white {
+    left: 1696px;
+}*/
+/*# sourceMappingURL=style.css.map */
