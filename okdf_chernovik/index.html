@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+	<html>
+	<head> 
+		<meta charset="UTF-8"/>
+		<title>okdf_chernovik</title>
+		<link rel="stylesheet" type="text/css" >
+	
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+		
+
+
+		<style>
+			#contr{
+	top: 10vw;
+	right: 0px;
+	width: 300px;
+	height: 200px;
+	position: fixed;
+	padding: 0px;
+	background-color: rgb(250,250,250);
+	border: solid 5px #8B0000;
+}
+
+
+.box{
+	outline: solid 1vw #8B0000;
+	outline-offset: -1vw;
+	width: 50vw;
+	height: 50vw;
+	padding: 0px;
+	position: absolute;
+}
+
+.l{
+	left: 0px;
+}
+
+.r{
+	left: 50vw;
+}
+
+.black{
+	background-color: rgb(0,0,0);
+}
+
+.white{
+	background-color: rgb(250,250,250);
+}
+
+#l1{
+	top: 0px;
+}
+
+#l2{
+	top: 50vw;
+}
+
+#l3{
+	top: 100vw;
+
+}
+
+#l4{
+	top: 150vw;
+}
+
+#l5{
+	top: 200vw;
+}
+
+#r1{
+	top: 0px;
+}
+
+#r2{
+	top: -50vw;
+}
+
+#r3{
+	top: -100vw;
+}
+
+#r4{
+	top: -150vw;
+}
+
+#r5{
+	top: -200vw;
+}
+		</style>
+
+<script>
+	$(document).ready(function(){
+
+
+
+
+var l1 = document.getElementById('l1');
+var l5 = document.getElementById('l5');
+var r5 = document.getElementById('r5');
+var contr = document.getElementById('contr');
+window.addEventListener('scroll', raz, false);
+window.addEventListener('resize', raz, false);
+function raz() {
+  var rectl1 = l1.getBoundingClientRect();
+  var rectl5 = l5.getBoundingClientRect();
+  var rectr5 = r5.getBoundingClientRect();
+  contr.innerHTML = 'height: ' + rectl1.height + '<br>width: ' + rectl1.width + '<br>ah: ' + (rectl5.bottom - rectl1.top) + '<br>l5bottom: ' + rectl5.bottom + '<br>r5bottom: ' + rectr5.bottom;
+
+
+
+  document.getElementById('r1').style.top= -rectl1.top/7.5 + 'vw';
+  document.getElementById('r2').style.top= -rectl1.top/7.5 - 50 + 'vw';
+  document.getElementById('r3').style.top= -rectl1.top/7.5 - 100 + 'vw';
+  document.getElementById('r4').style.top= -rectl1.top/7.5 - 150 + 'vw';
+  document.getElementById('r5').style.top= -rectl1.top/7.5 - 200 + 'vw';
+}
+
+
+});
+</script>
+
+
+	</head>
+	<body>
+
+	
+
+	<div id="l1" class = "box l white"> </div>
+	<div id="l2" class = "box l black"> </div>
+	<div id="l3" class = "box l white"> </div>
+	<div id="l4" class = "box l black"> </div>
+	<div id="l5" class = "box l white"> </div>
+	<div id="r1" class = "box r black"> </div>
+	<div id="r2" class = "box r white"> </div>
+	<div id="r3" class = "box r black"> </div>
+	<div id="r4" class = "box r white"> </div>
+	<div id="r5" class = "box r black"> </div>
+
+
+	<div id = "contr"></div>
+
+	</body>
